@@ -1,8 +1,7 @@
 #include<stdio.h>
 /**
  * main - Print using printf function
- * Description: prints the size of various types 
- * on the computer it is compiled and run on
+ * Description: prints the size of various data types
  *
  * Return: Always zero (0) - Success
  */
