@@ -1,14 +1,14 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<unistd.h>
 /**
  * main - Program starting point
- * Description:  prints without using printf or put functions
+ * Description:  prints without using printf or put functions buffer value
  *
  * Return: 1 -  Always success
  */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful
+	write(1, "and that piece of art is useful
 			\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
