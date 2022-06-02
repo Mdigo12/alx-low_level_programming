@@ -1,7 +1,6 @@
 #include<stdio.h>
 /**
  * Description: How to use printf function
- * 
  * main - Prints "with proper grammar, but the outcome is a piece of art,"
  *
  * Return: "with proper grammar, but the outcome is a piece of art," else 0
