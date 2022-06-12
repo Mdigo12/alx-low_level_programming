@@ -35,9 +35,9 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else
+	else if (n > 98)
 	{
-		for (i = n; n >= 98; i--)
+		for (i = n; n >= 98; --i)
 		{
 			_putchar(i / 10 + '0');
 			_putchar(i % 10 + '0');
@@ -47,6 +47,11 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 		}
+	}
+	else
+	{
+		_putchar(i / 10 + '0');
+		_putchar(i % 10 + '0');
 	}
 	_putchar('\n');
 }
