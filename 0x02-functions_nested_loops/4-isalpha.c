@@ -12,13 +12,17 @@
 int _isalpha(int c)
 {
 	char UC;
+	char lc;
 	int i = 0;
 
 	for (UC = 'A'; UC <= 'Z'; UC++)
 	{
-		if (UC == c)
+		for (lc = 'a'; lc <= 'z'; lc++)
 		{
-			i = 1;
+			if (c == UC && c == lc)
+			{
+				i = 1;
+			}
 		}
 	}
 
