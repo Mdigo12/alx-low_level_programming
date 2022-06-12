@@ -19,7 +19,7 @@ int _isalpha(int c)
 	{
 		for (lc = 'a'; lc <= 'z'; lc++)
 		{
-			if (c == UC && c == lc)
+			if (c == UC || c == lc)
 			{
 				i = 1;
 			}
