@@ -8,16 +8,13 @@
  * Return: 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	int i = 0;
-	char lc[26] = print_alphabet();
+	char lc;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(lc[i]);
+		_putchar(lc);
 	}
 	_putchar('\n');
-
-	return (0);
 }
