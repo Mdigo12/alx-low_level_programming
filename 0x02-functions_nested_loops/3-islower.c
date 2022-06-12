@@ -17,7 +17,7 @@ int _islower(int c)
 	{
 		if (lc == c)
 		{
-			i = 1
+			i = 1;
 		}
 	}
 
