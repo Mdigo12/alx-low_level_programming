@@ -11,7 +11,7 @@
 
 int print_sign(int n)
 {
-	char sign = '0'
+	char sign = '0';
 	
 	if (n > 0)
 	{
