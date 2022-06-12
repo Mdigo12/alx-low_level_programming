@@ -15,7 +15,7 @@ int print_last_digit(int r)
 
 	if (r < 0)
 	{
-		m = (0 - r) % 10;
+		m = 0 - (r % 10);
 	}
 	else
 	{
