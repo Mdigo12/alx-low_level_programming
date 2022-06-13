@@ -20,6 +20,9 @@ int main(void)
 		i = j;
 		j = k;
 
+		if (n == 49)
+			continue;
+
 		printf("%ld, ", j);
 	}
 	printf("\n");
