@@ -18,8 +18,13 @@ int main(void)
 		k = i + j;
 		i = j;
 		j = k;
+
+		printf("%d, %d, ", i, j);
 	}
-	printf("%d, %d, ", i, j);
+	/**
+	 * printf("%d, ", i);
+	 * printf("%d, ", j);
+	*/
 	printf("\n");
 
 	return (0);
