@@ -21,7 +21,7 @@ void print_times_table(int n)
 			{
 				k = i * j;
 
-				if (n < 10)
+				if (k < 10)
 				{
 					if (j != 0)
 					{
@@ -35,6 +35,22 @@ void print_times_table(int n)
 					{
 						_putchar(k + '0');
 					}
+				}
+				else if (k <= 10 && k <= 99)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(k / 10 + '0');
+					_putchar(k % 10 + '0');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(k / 100 + '0');
+					_putchar(k / 10 % 10 + '0');
+					_putchar(k % 10 + '0');
 				}
 			}
 			_putchar('\n');
