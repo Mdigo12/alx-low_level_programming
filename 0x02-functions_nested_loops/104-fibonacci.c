@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define LG 100000000000
+#define LG 10000000000
 /**
  * main - entry point
  *
