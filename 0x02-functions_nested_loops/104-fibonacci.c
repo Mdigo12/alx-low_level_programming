@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define LG 10000000000
+#define LG 1000000000
 /**
  * main - entry point
  *
@@ -22,16 +22,16 @@ int main(void)
 			hold2 = (i + j) % LG;
 			hold3 = fr1 + fr2 + hold1;
 			fr1 = fr2;
-		       	fr2 = hold3;
+			fr2 = hold3;
 			i = j;
-		       	j = hold2;
+			j = hold2;
 			printf("%ld%010ld", fr2, j);
 		}
 		else
 		{
 			hold2 = i + j;
 			i = j;
-		       	j = hold2;
+			j = hold2;
 			printf("%ld", j);
 		}
 		if (n != 97)
