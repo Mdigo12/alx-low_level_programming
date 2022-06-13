@@ -17,7 +17,7 @@ int main(void)
 	long k = 0;
 	long sum = 0;
 
-	for (n = 0; n++)
+	for (n = 0; n <= 49; n++)
 	{
 		k = i + j;
 		i = j;
