@@ -20,7 +20,7 @@ int main(void)
 		i = j;
 		j = k;
 
-		if (n == 49)
+		if (n == 48)
 			continue;
 
 		printf("%ld, ", j);
