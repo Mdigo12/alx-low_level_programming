@@ -20,12 +20,8 @@ int main(void)
 		i = j;
 		j = k;
 
-		printf("%d, ", j);
+		printf("%i, ", j);
 	}
-	/**
-	 * printf("%d, ", i);
-	 * printf("%d, ", j);
-	*/
 	printf("\n");
 
 	return (0);
