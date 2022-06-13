@@ -18,7 +18,6 @@ int main(void)
 		{
 			r += i;
 		}
-		r += r;
 	}
 	printf("%d", r);
 	printf("\n");
