@@ -14,13 +14,13 @@ int main(void)
 	long k = 0;
 
 	printf("%ld, ", i);
-	for (n = 0; n < 96; n++)
+	for (n = 0; n < 93; n++)
 	{
 		k = i + j;
 		i = j;
 		j = k;
 
-		if (n == 95)
+		if (n == 92)
 		{
 			printf("%ld", j);
 		}
