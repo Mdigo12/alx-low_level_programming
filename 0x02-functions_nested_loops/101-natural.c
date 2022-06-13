@@ -16,9 +16,9 @@ int main(void)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-			r = i;
+			r += i;
 		}
-		r = +r;
+		r += r;
 	}
 	printf("%d", r);
 	printf("\n");
