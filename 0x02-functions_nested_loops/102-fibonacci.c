@@ -19,7 +19,8 @@ int main(void)
 		i = j;
 		j = k;
 	}
-	printf("%d, %d, ", i,j);
+	printf("%d, %d, ", i, j);
+	printf("\n");
 
 	return (0);
 }
