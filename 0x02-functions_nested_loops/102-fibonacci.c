@@ -9,9 +9,9 @@
 int main(void)
 {
 	int n;
-	int i = 1;
-	int j = 1;
-	int k = 0;
+	double i = 1;
+	double j = 1;
+	double k = 0;
 
 	printf("%d, ", i);
 	for (n = 0; n < 50; n++)
