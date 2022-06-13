@@ -13,13 +13,14 @@ int main(void)
 	int j = 1;
 	int k = 0;
 
-	for (n = 1; n <= 50; n++)
+	for (n = 0; n < 50; n++)
 	{
 		k = i + j;
 		i = j;
 		j = k;
 
-		printf("%d, %d, ", i, j);
+		printf("%d, ", i);
+		printf("%d, ", j);
 	}
 	/**
 	 * printf("%d, ", i);
