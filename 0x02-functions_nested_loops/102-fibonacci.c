@@ -9,18 +9,18 @@
 int main(void)
 {
 	int n;
-	double i = 1;
-	double j = 1;
-	double k = 0;
+	long i = 1;
+	long j = 1;
+	long k = 0;
 
-	printf("%f, ", i);
-	for (n = 0; n < 50; n++)
+	printf("%ld, ", i);
+	for (n = 0; n < 49; n++)
 	{
 		k = i + j;
 		i = j;
 		j = k;
 
-		printf("%f, ", j);
+		printf("%ld, ", j);
 	}
 	printf("\n");
 
