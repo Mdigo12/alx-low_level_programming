@@ -21,7 +21,7 @@ int main(void)
 		j = k;
 
 		if (n == 48)
-			continue;
+			printf("%ld", j);
 
 		printf("%ld, ", j);
 	}
