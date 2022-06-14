@@ -11,35 +11,19 @@
  */
 int main(void)
 {
-	char password[84];
-	int index = 0, sum = 0, dh1, dh2;
+	int r = 0, c = 0;
+	time_t t;
 
-	srand(time(0));
+	srand((unsigned int) time(&t));
 
-	while (sum < 2772)
+	while (c < 2772)
 	{
-		password[index] = 33 + rand() % 94;
-		sum += password[index++];
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-
-	password[index] = '\0';
-
-	if (sum != 2772)
-	{
-		dh1 = (sum - 2772) / 2;
-		dh2 = (sum - 2772) / 2;
-		if ((sum - 2772) % 2 != 0)
-			dh1++;
-
-		for (index = 0; password[index]; index++)
-		{
-			if (password[index] >= (33 + dh2))
-			{
-				password[index] -= dh2;
-				break;
-			}
-		}
-	}
-	printf("%s", password);
+	printf("%c\n", (2772 - c));
 	return (0);
 }
