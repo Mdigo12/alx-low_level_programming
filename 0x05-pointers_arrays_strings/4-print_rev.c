@@ -1,10 +1,22 @@
 #include "main.h"
 
 /**
- * reset_to_98 - See dscription
- * Description: A function that takes a pointer to an int as parameter
- * and updates the value it points to to 98
- * @2: An integer input pointer
+ * print_rev - See dscription
+ * Description: A function that prints a string, in reverse,
+ * followed by a new line
+ * @s: An input string
  *
  * Return: Nothing (void function)
  */
+
+void print_rev(char *s)
+{
+	int l = 0;
+
+	while (s[l] != '\0')
+		l++;
+
+	while (l)
+		_putchar(s[--l]);
+	_putchar('\n');
+}
