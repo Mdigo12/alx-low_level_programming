@@ -1,10 +1,21 @@
 #include "main.h"
 
 /**
- * reset_to_98 - See dscription
- * Description: A function that takes a pointer to an int as parameter
- * and updates the value it points to to 98
- * @2: An integer input pointer
+ * _puts - See dscription
+ * Description: A function that prints a string,
+ * followed by a new line, to stdout
+ * @str: An input string
  *
  * Return: Nothing (void function)
  */
+void _puts(char *str)
+{
+	int n = 0;
+
+	while (str[n] != '\0')
+	{
+		_putchar(str[n]);
+		n++;
+	}
+	_putchar('\n');
+}
