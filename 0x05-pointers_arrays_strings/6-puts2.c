@@ -1,10 +1,27 @@
 #include "main.h"
 
 /**
- * reset_to_98 - See dscription
- * Description: A function that takes a pointer to an int as parameter
- * and updates the value it points to to 98
- * @2: An integer input pointer
+ * puts2 - See dscription
+ * Description: A function that prints every other character of a string,
+ * starting with the first character, followed by a new line
+ * @str: An input string
  *
  * Return: Nothing (void function)
  */
+
+void puts2(char *str)
+{
+	int l = 0, n = 0;
+
+	while (str[l] != '\0')
+		l++;
+
+	l -= 1;
+
+	for (; n <= l; n += 2)
+	{
+		_putchar(str[n]);
+	}
+
+	_putchar('\n');
+}
