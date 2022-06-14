@@ -1,10 +1,21 @@
 #include "main.h"
 
 /**
- * reset_to_98 - See dscription
- * Description: A function that takes a pointer to an int as parameter
- * and updates the value it points to to 98
- * @2: An integer input pointer
+ * *_strcpy - See dscription
+ * Description: A function that copies the string pointed to by src,
+ * including the terminating null byte (\0),
+ * to the buffer pointed to by dest
+ * @dest: A pointer to destination of string
+ * @src: A pointer to source string to copy from
  *
- * Return: Nothing (void function)
+ * Return: Pointer to dest
  */
+
+char *_strcpy(char *dest, char *src)
+{
+	char *alx = dest;
+
+	while (*src)
+		*dest++ = *src++;
+	return (alx);
+}
