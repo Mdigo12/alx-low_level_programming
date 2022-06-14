@@ -12,7 +12,7 @@ int _atoi(char *s)
 	short boolean;
 	int p, mns, rlt;
 
-	p = mns = rst = boolean = 0;
+	p = mns = rlt = boolean = 0;
 	mns = -1;
 
 	while (s[p] != '\0')
@@ -23,7 +23,7 @@ int _atoi(char *s)
 		if (s[p] >= '0' && s[p] <= '9')
 		{
 			rlt *= 10;
-			result -= (s[p] - '0');
+			rlt -= (s[p] - '0');
 			boolean = 1;
 		}
 		else if (boolean == 1)
