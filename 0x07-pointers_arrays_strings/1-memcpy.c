@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memcpy() - Check description.
+ * _memcpy - Check description.
  * Description: copies memory area
  * @dest: char array to copy into (destination)
  * @src: char array to copy from (source)
