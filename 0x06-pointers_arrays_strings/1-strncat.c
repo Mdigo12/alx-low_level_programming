@@ -16,23 +16,20 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
-	int len = 0;
-
-	/*char *new_dest = dest;*/
+	char *new_dest = dest;
 
 	/* navigate to the end of dest */
 	while (*dest)
-		len++;
-		/*dest++;*/
+		dest++;
 
 	/* append at most n characters to src */
-	while (src[i] && i < n)
+	while (*src && i < n)
 	{
-		dest[len + i] = src[i];
+		*dest++ = *src++;
 		i++;
 	}
 	/* add a terminating null byte */
 	*dest = '\0';
 
-	return (dest);
+	return (new_dest);
 }
