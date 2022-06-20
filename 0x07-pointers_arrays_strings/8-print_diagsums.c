@@ -13,27 +13,21 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, sum, sizer;
+	int  i, sum1 = 0, sum2 = 0;
 
-	i = 0;
-	sum = 0;
-	sizer = size * size;
-
-	while (i < sizer)
+	for (i = 0; i < size; i++)
 	{
-		if (i % (size + 1) == 0)
-			sum += a[i];
-		i++;
+		sum1 += a[i];
+		a += size;
 	}
-	printf("%d, ", sum);
 
-	sum = 0;
-	i = 0;
-	while (i < sizer)
+	a -= size;
+
+	for (i = 0; i < size; i++)
 	{
-		if (i % (size - 1) == 0 && i != (sizer - 1) && i != 0)
-			sum = a[i];
-		i++;
+		sum2 += a[i];
+		a -= size;
 	}
-	printf("%d\n", sum);
+
+	printf("%d, %d\n", sum1, sum2);
 }
