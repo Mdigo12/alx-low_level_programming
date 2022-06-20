@@ -33,5 +33,5 @@ char *_strncat(char *dest, char *src, int n)
 	/* add a terminating null byte */
 	*dest = '\0';
 
-	return (new_dest);
+	return (dest);
 }
