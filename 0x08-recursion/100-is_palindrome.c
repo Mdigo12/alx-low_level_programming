@@ -1,7 +1,7 @@
 #include "main.h"
 
 int _strlen(char *s);
-int check_pali(int *s, int len, int index);
+int check_pali(char *s, int len, int index);
 int is_palindrome(char *s);
 
 /**
