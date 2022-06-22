@@ -17,7 +17,7 @@ int _strlen(char *str)
 	int len = 0;
 
 	if (*str != '\0' && *str != '*')
-		len = 1 + _strlen(s + 1);
+		len = 1 + _strlen(str + 1);
 	return (len);
 }
 
