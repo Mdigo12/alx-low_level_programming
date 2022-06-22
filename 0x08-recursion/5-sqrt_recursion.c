@@ -1,18 +1,13 @@
 #include "main.h"
+
+int sqrt(int pr, int root);
+int _sqrt_recursion(int n);
 /**
  * sqrt - return square root value
  * @pr: previous value
  * @root: root value
  *
  * Return: root value
- */
-
-/**
- * _sqrt_recursion -  function that returns
- * the natural square root of a number.
- * @n: input integer
- *
- * Return: square root of n
  */
 
 int sqrt(int pr, int root)
@@ -24,6 +19,12 @@ int sqrt(int pr, int root)
 	return (sqrt(pr + 1, root));
 }
 
+/**
+ * _sqrt_recursion - return root
+ * @n: input integer
+ *
+ * Return: root of n
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
