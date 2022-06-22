@@ -15,9 +15,15 @@ int wildcmp(char *s1, char *s2);
 int _strlen(char *str)
 {
 	int len = 0;
+	int index = 0;
 
-	if (*str != '\0' && *str != '*')
-		len = 1 + _strlen(str + 1);
+	if (*(str + index))
+	{
+		if (*str != '*')
+			len++;
+		index++;
+		len  += _strlen(str + index);
+	}
 	return (len);
 }
 
