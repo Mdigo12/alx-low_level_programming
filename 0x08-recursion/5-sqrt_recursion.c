@@ -3,7 +3,7 @@
 int _sqrt(int pr, int root);
 int _sqrt_recursion(int n);
 /**
- * sqrt - return square root value
+ * _sqrt - return square root value
  * @pr: previous value
  * @root: root value
  *
