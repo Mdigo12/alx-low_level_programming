@@ -1,8 +1,11 @@
 #include <stdio.h>
 
+#pragma unused <argc>
+
 /**
  * main - entry point
- * Description: Yuo
+ * Description: a program that prints its name,
+ * followed by a new line
  * @argc: arguments counter
  * @argv: array string of arguments passed
  *
