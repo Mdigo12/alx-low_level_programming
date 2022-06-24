@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry point
- * Description: Yuo
+ * Description: a program that prints the number of arguments passed into it
  * @argc: arguments counter
  * @argv: array string of arguments passed
  *
- * Return: void
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
 {
+	printf("%d", argc);
 	return (0);
 }
