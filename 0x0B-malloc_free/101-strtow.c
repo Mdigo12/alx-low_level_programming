@@ -26,6 +26,13 @@ int word_len(char *str)
 	return (len);
 }
 
+/**
+ * count_words - Count number of words in  a string
+ * @str: The string to be searched
+ *
+ * Return: Number of words in the string
+ */
+
 int count_words(char *str)
 {
 	int index = 0, words = 0, len = 0;
