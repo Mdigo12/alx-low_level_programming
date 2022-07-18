@@ -14,12 +14,12 @@ section .text
 main:
 	push rbp
 
-	mov rax, 1		;id
+	mov rax, 0		;id
 	mov rdi, fmt		;file descriptor ie std_out
 	mov rsi, msg		;address for the message
 	call printf
 
 	pop rbp
 
-	mov rdi, 0		;exit success code
+	mov rax, 0		;exit success code
 	ret			;return
