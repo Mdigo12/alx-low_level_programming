@@ -47,5 +47,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		last->next = new;/*Assign member next of the last element to point to new*/
 	}
 
-	return (new);
+	return (*head);
 }
