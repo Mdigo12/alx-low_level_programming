@@ -25,7 +25,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	/* get str lenth*/
-	for (len = 0; str(len);)
+	for (len = 0; str[len];)
 		len++;
 
 	/*assign values to members of the new*/
