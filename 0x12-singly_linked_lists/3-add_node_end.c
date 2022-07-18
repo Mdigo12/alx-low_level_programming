@@ -37,8 +37,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	last = *head;
 
 	/*If the Linked List is empty, then make the new node as head*/
-	if (last == NULL)
-		last = new;
+	if (*head == NULL)
+		*head = new;
 	else
 	{
 		/*traverse to the last element whose head is NULL*/
