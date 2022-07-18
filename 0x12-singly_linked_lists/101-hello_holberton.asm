@@ -1,21 +1,25 @@
 ; File: 101-hello_holberton.asm
-; Auth: Brennan D Baraban
+; Auth: Jacob M. Mdigo
 ; Desc: 64-bit assembly program that prints
 ;       Hello, Holberton followed by a new line.
 
+extern printf
+
 section .data
-	msg db "Hello, Holberton",10 ;10 is an ASCII code for \n
-	msg_len equ $ -msg
+	msg: db "Hello, Holberton", 10, 0 ;10 is an ASCII code for \n
+	fmt: db "%s", 10, 0
 
 section .text
-	global _start
-_start:
-	mov rax, 1		;id
-	mov rdi, 1		;file descriptor ie std_out
-	mov rsi, msg		;address for the message
-	mov rdx, msg_len	;address for the message length
-	syscall			;
+	global main
+main:
+	push rbp
 
-	mov rax, 60		; address for exit code
+	mov rax, 1		;id
+	mov rdi, fmt		;file descriptor ie std_out
+	mov rsi, msg		;address for the message
+	call printf
+
+	pop rbp
+
 	mov rdi, 0		;exit success code
-	syscall
+	ret			;return
