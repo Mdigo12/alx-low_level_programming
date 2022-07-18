@@ -6,7 +6,7 @@
 extern printf
 
 section .data
-	msg: db "Hello, Holberton", 10, 0 ;10 is an ASCII code for \n
+	msg: db "Hello, Holberton", 0 ;10 is an ASCII code for \n
 	fmt: db "%s", 10, 0
 
 section .text
