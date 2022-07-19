@@ -1,4 +1,4 @@
-/**
+/*
  * STEPS
  * 1. Take the next item that the head points to and save it
  * 2. Free the head item
@@ -20,10 +20,11 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *nextNode;
-	int headValue = 1;
+	int headValue;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
+
 	nextNode = (*head)->next;
 	headValue = (*head)->n;
 	free(*head);
