@@ -7,12 +7,12 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *temp;
+	listint_t *temp; /*to hold th current node to be freed*/
 
 	while (head != NULL)
 	{
 		temp = head;
-		head = head->next;
-		free(temp);
+		head = head->next; /*moves to the next node*/
+		free(temp); /*frees the current node*/
 	}
 }
