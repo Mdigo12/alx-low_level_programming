@@ -1,3 +1,9 @@
+/*
+ * File: 0-read_textfile.c
+ * Auth: Mdigo Jm
+ * Title: Petroleum Engineering Graduate
+ */
+
 #include "main.h"
 #include <stdlib.h>
 
