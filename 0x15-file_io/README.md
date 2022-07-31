@@ -9,7 +9,7 @@ to create, open, close, read, write, set permissions of files in C.
 * [Test](https://github.com/Mdigo12/alx-low_level_programming/tree/main/0x15-file_io/test_f): A folder with test files provided in the Alx Platform.
 
 ## Header File :scroll:
-* [main.h] (https://github.com/Mdigo12/alx-low_level_programming/blob/main/0x15-file_io/main.h): Contains all the prototype functions used.
+* [main.h](https://github.com/Mdigo12/alx-low_level_programming/blob/main/0x15-file_io/main.h): Contains all the prototype functions used.
 
 |FILE|PROTOTYPE|
 |------------------------|----------------------------------------------------------|
