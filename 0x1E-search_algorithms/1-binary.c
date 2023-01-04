@@ -8,30 +8,30 @@
  * @size: size of the array
  * @value: the value to search fo
  * Return: Always 0
- * */
+ */
 
 int binary_search(int *array, size_t size, int value)
 {
 
-	size_t i, left, right;
+	size_t i, lb, ub;
 
 	if (array == NULL)
 		return (-1);
 
-	for (left = 0, right = size - 1; right >= left;)
+	for (lb = 0, ub = size - 1; ub >= lb;)
 	{
 		printf("Searching in array: ");
-		for (i = left; i < right; i++)
+		for (i = lb; i < ub; i++)
 			printf("%d, ", array[i]);
 		printf("%d\n", array[i]);
 
-		i = left + (right - left) / 2;
+		i = lb + (ub - lb) / 2;
 		if (array[i] == value)
 			return (i);
 		if (array[i] > value)
-			right = i - 1;
+			ub = i - 1;
 		else
-			left = i + 1;
+			lb = i + 1;
 	}
 
 	return (-1);
